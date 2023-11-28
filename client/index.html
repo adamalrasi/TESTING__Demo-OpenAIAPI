@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/pixel.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AdamAi - Your Funny Coding AI</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Team 12 - OpenAi Demo</title>
+    <script></script>
   </head>
   <body>
-    <div id="app">
-      <div class="chat_container"></div>
+    <!-- TEST server is running-->
+    <button id="test">TEST SERVER</button>
+  
+    <!-- TEST response will display on the DOM-->
+      <div class="chat_containerTEST"></div>
+
+      <!-- The OpenAI fetch from the server to display on DOM-->
+      <label for="prompt">Please enter your prompt:</label>
+      <br />
       <form>
         <textarea
           name="prompt"
-          cols="1"
-          rows="1"
-          placeholder="Ask AdamAi..."
+          cols="10"
+          rows="5"
+          placeholder="Enter your prompt here"
         ></textarea>
         <button type="submit">Submit</button>
       </form>
+
+      <!-- The OpenAI fetch from the server to display on DOM-->
+      <div class="chat_container">Response here:</div>
+
     </div>
 
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
